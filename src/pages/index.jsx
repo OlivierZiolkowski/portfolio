@@ -1,9 +1,8 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
 import Header from '../components/Header';
+import Technologies from '../components/Technologies';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -13,7 +12,9 @@ export default function Home() {
       description="Portfolio d'Olivier Ziolkowski, développeur web front-end">
       <div className='container'>
         <Header />
-        <main />
+        <main>
+          <Technologies />
+        </main>
       </div>
     </Layout>
   );
