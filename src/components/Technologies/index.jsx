@@ -10,54 +10,77 @@ import FirebaseLogo from "../../../static/img/icons8-google-firebase-console-48.
 
 // List of technologies to be underlight
 const primaryTech = [
-    {
-        "name":"React.js",
-        "logo":ReactLogo,
-        "alt":"Logo React.js",
-    },
-    {
-        "name":"JavaScript",
-        "logo":JSLogo,
-        "alt":"Logo JavaScript",
-    },
-    {
-        "name":"HTML 5",
-        "logo":HTMLLogo,
-        "alt":"Logo HTML 5",
-    },
-    {
-        "name":"CSS 3",
-        "logo":CSSLogo,
-        "alt":"Logo CSS 3",
-    },
-    {
-        "name":"GitHub",
-        "logo":GitHubLogo,
-        "alt":"Logo GitHub",
-    },
-    {
-        "name":"Firebase",
-        "logo":FirebaseLogo,
-        "alt":"Logo Google Firebase",
-    },
+  {
+    name: "React.js",
+    logo: ReactLogo,
+    alt: "Logo React.js",
+  },
+  {
+    name: "JavaScript",
+    logo: JSLogo,
+    alt: "Logo JavaScript",
+  },
+  {
+    name: "HTML 5",
+    logo: HTMLLogo,
+    alt: "Logo HTML 5",
+  },
+  {
+    name: "CSS 3",
+    logo: CSSLogo,
+    alt: "Logo CSS 3",
+  },
+  {
+    name: "GitHub",
+    logo: GitHubLogo,
+    alt: "Logo GitHub",
+  },
+  {
+    name: "Firebase",
+    logo: FirebaseLogo,
+    alt: "Logo Google Firebase",
+  },
 ];
 
 // Names of secondary technologies
-const secondaryTech = ["Next.js", "TypeScript", "Node.js", "SASS", "Styled Components", "PHP", "MySQL", "MongoDB", "WordPress", "Markdown"];
+const secondaryTech = [
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Redux",
+  "SASS",
+  "Styled Components",
+  "PHP",
+  "MySQL",
+  "MongoDB",
+  "WordPress",
+  "Markdown",
+];
 
 export default function Technologies() {
-    return (
-        <div className={styles.main}>
-            <h2>Technologies</h2>
-            <div className={clsx("icons", styles.icons)}>
-                {primaryTech.map((technology, index) => 
-                    <div className={styles.icon} key={index}>
-                        <img src={technology.logo} className="shadow--lg" alt={technology.alt} />
-                        <h3>{technology.name}</h3>
-                    </div>
-                )}
-            </div>
-            <p>Mais aussi : {secondaryTech.map((technology) => secondaryTech.indexOf(technology) !== secondaryTech.length - 1 ? technology + " - " : technology)}</p>
-        </div>
-    )
+  return (
+    <div className={styles.main}>
+      <h2>Technologies</h2>
+      <div className={clsx("icons", styles.icons)}>
+        {primaryTech.map((technology, index) => (
+          <div className={styles.icon} key={index}>
+            <img
+              src={technology.logo}
+              className="shadow--lg"
+              alt={technology.alt}
+            />
+            <h3>{technology.name}</h3>
+          </div>
+        ))}
+      </div>
+      <p>
+        Mais aussi :{" "}
+        {secondaryTech.map((technology) =>
+          secondaryTech.indexOf(technology) !== secondaryTech.length - 1
+            ? technology + " - "
+            : technology
+        )}
+      </p>
+    </div>
+  );
 }

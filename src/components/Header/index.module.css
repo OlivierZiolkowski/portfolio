@@ -1,16 +1,16 @@
 .avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .infos {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .subtitle {
-    font-style: italic;
-    font-size: 18px;
+  font-style: italic;
+  font-size: 18px;
 }
