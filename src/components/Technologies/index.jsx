@@ -64,12 +64,8 @@ export default function Technologies() {
       <div className={clsx("icons", styles.icons)}>
         {primaryTech.map((technology, index) => (
           <div className={styles.icon} key={index}>
-            <img
-              src={technology.logo}
-              className="shadow--lg"
-              alt={technology.alt}
-            />
-            <h3>{technology.name}</h3>
+            <img src={technology.logo} alt={technology.alt} />
+            <span>{technology.name}</span>
           </div>
         ))}
       </div>

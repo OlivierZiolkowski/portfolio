@@ -26,8 +26,28 @@
   width: 100px;
 }
 
+.icon > span {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
 .icon img {
   background-color: white;
   border-radius: 50%;
   padding: 1rem;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.icon img:hover {
+  filter: grayscale(0%);
+  transition: all 0.5s ease;
+  transform: scale(1.05);
+}
+
+/* Only for mobile devices */
+@media screen and (hover: none) and (pointer: coarse) {
+  .icon img {
+    filter: grayscale(0%);
+  }
 }
