@@ -18,6 +18,8 @@
   --ifm-h1-font-size: 64px;
   --ifm-h2-font-size: 48px;
   --ifm-h3-font-size: 24px;
+
+  --custom-transition-hover-elt: all 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {

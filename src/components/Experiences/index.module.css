@@ -19,7 +19,11 @@
 }
 
 .section__pills > li {
-  width: fit-content;
+  transition: var(--custom-transition-hover-elt);
+}
+
+.section__pills > li:hover {
+  transition: var(--custom-transition-hover-elt);
 }
 
 .experience {
