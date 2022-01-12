@@ -59,7 +59,7 @@ const secondaryTech = [
 
 export default function Technologies() {
   return (
-    <div className={styles.main}>
+    <section className={styles.section}>
       <h2>Technologies</h2>
       <div className={clsx("icons", styles.icons)}>
         {primaryTech.map((technology, index) => (
@@ -81,6 +81,6 @@ export default function Technologies() {
             : technology
         )}
       </p>
-    </div>
+    </section>
   );
 }
