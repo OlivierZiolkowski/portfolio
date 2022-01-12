@@ -1,0 +1,29 @@
+.section__title {
+  text-align: center;
+}
+
+.section__pills {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.section__pills::-webkit-scrollbar {
+  display: none;
+}
+
+.section__pills > li {
+  width: fit-content;
+}
+
+.experience {
+  background-color: var(--ifm-pills-color-background-active);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience__date {
+  font-weight: bold;
+}

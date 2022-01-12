@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
+import clsx from "clsx";
 
 // Experiences array
 const experiences = [
@@ -7,7 +8,7 @@ const experiences = [
     position: "Développeur front-end",
     sub: "Dev front-end",
     company: "indépendant",
-    startDate: "Septembre 2021",
+    startDate: "Actuellement",
     endDate: "",
     desc: {
       1: "Participation à Data For Good depuis Janvier 2022",
@@ -91,9 +92,9 @@ export default function Experiences() {
   const { position, company, startDate, endDate, desc } = experiences[value];
 
   return (
-    <section>
-      <h2>Expériences</h2>
-      <ul className="pills">
+    <section className={styles.section}>
+      <h2 className={styles.section__title}>Expériences</h2>
+      <ul className={clsx("pills", styles.section__pills)}>
         {experiences.map((experience, index) => (
           <li
             key={index}
@@ -106,11 +107,11 @@ export default function Experiences() {
           </li>
         ))}
       </ul>
-      <article>
+      <article className={styles.experience}>
         <h3>
           {position} - {company}
         </h3>
-        <p>
+        <p className={styles.experience__date}>
           {startDate}
           {endDate && ` - ${endDate}`}
         </p>
