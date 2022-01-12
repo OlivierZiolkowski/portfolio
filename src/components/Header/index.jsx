@@ -16,13 +16,13 @@ const informations = {
 
 export default function Header() {
   return (
-    <header className="padding--md row">
+    <header className={clsx("padding--md row", styles.header)}>
       <div className={clsx("col margin-bottom--lg", styles.avatar)}>
         <img src={avatar} alt="avatar de l'auteur" />
       </div>
       <div className={clsx("col", styles.infos)}>
         <p className={styles.subtitle}>{informations.surtitle}</p>
-        <h1>{informations.title}</h1>
+        <h1 className={styles.title}>{informations.title}</h1>
         <p className={styles.subtitle}>{informations.subtitle}</p>
         <p>{informations.firstPar}</p>
         <p>{informations.scndPar}</p>
