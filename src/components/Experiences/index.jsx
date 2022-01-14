@@ -93,7 +93,7 @@ export default function Experiences() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.section__title}>Expériences</h2>
+      <h2>Expériences</h2>
       <ul className={clsx("pills", styles.section__pills)}>
         {experiences.map((experience, index) => (
           <li
