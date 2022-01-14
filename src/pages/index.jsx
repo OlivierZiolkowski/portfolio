@@ -4,6 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Header from "../components/Header";
 import Technologies from "../components/Technologies";
 import Experiences from "../components/Experiences";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,6 +18,7 @@ export default function Home() {
         <main>
           <Technologies />
           <Experiences />
+          <Projects />
         </main>
       </div>
     </Layout>
