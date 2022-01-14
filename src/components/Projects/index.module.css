@@ -37,7 +37,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.125;
+  opacity: 0.35;
   transition: var(--custom-transition-hover-elt);
 }
 
