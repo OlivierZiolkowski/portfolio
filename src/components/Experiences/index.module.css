@@ -16,6 +16,7 @@
 
 .section__pills > li {
   transition: var(--custom-transition-hover-elt);
+  min-width: fit-content;
 }
 
 .section__pills > li:hover {
