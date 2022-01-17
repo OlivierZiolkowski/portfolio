@@ -1,39 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Olivier Ziolkowski',
-  tagline: 'Développeur font-end',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'OlivierZiolkowski', // Usually your GitHub org/user name.
-  projectName: 'portfolio', // Usually your repo name.
+  title: "Olivier Ziolkowski - Développeur front-end React.js",
+  tagline: "Développeur font-end",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "OlivierZiolkowski", // Usually your GitHub org/user name.
+  projectName: "portfolio", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -43,55 +44,55 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Olivier Ziolkowski',
+        title: "Olivier Ziolkowski",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://www.linkedin.com/in/olivier-ziolkowski/',
-            label: 'LinkedIn',
-            position: 'right',
+            href: "https://www.linkedin.com/in/olivier-ziolkowski/",
+            label: "LinkedIn",
+            position: "right",
           },
           {
-            href: 'https://github.com/OlivierZiolkowski',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/OlivierZiolkowski",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Retrouvez-moi',
+            title: "Retrouvez-moi",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/OlivierZiolkowski',
+                label: "GitHub",
+                href: "https://github.com/OlivierZiolkowski",
               },
               {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/olivier-ziolkowski/',
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/olivier-ziolkowski/",
               },
               {
-                label: 'We❤Devs.com',
-                href: 'https://welovedevs.com/app/fr/developer/olivier-developpeur-reactif',
+                label: "We❤Devs.com",
+                href: "https://welovedevs.com/app/fr/developer/olivier-developpeur-reactif",
               },
             ],
           },
           {
-            title: 'Liens',
+            title: "Liens",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/OlivierZiolkowski',
+                label: "GitHub",
+                href: "https://github.com/OlivierZiolkowski",
               },
             ],
           },

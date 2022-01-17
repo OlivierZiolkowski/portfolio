@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../../static/img/avatar.png";
+import illustration from "../../../static/img/home-illustration.png";
 import styles from "./index.module.css";
 import clsx from "clsx";
 
@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className={clsx("padding--md row", styles.header)}>
       <div className={clsx("col margin-bottom--lg", styles.avatar)}>
-        <img src={avatar} alt="avatar de l'auteur" />
+        <img src={illustration} alt="avatar de l'auteur" />
       </div>
       <div className={clsx("col", styles.infos)}>
         <p className={styles.subtitle}>{informations.surtitle}</p>
@@ -26,7 +26,12 @@ export default function Header() {
         <p className={styles.subtitle}>{informations.subtitle}</p>
         <p>{informations.firstPar}</p>
         <p>{informations.scndPar}</p>
-        <button className="button button--primary">{informations.cta}</button>
+        <a
+          className="button button--primary"
+          href="mailto:olivier.ziolkowski@gmail.com"
+        >
+          {informations.cta}
+        </a>
       </div>
     </header>
   );
