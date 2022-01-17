@@ -45,7 +45,7 @@ export default function Projects() {
             <p className={styles.projectDesc}>{project.desc}</p>
             <ul>
               {project.technos.map((tech, index) => (
-                <li>{tech}</li>
+                <li key={index}>{tech}</li>
               ))}
             </ul>
             <ul className={styles.projectLinks}>
