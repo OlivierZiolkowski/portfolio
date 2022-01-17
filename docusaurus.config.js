@@ -70,16 +70,25 @@ const config = {
             title: "Retrouvez-moi",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/OlivierZiolkowski",
+                html: `
+                    <a href="https://github.com/OlivierZiolkowski" target="_blank" rel="noreferrer noopener" aria-label="Page GitHub">
+                      <img src="img/footer-github-50.png" alt="Page GitHub" />
+                    </a>
+                  `,
               },
               {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/in/olivier-ziolkowski/",
+                html: `
+                    <a href="https://www.linkedin.com/in/olivier-ziolkowski/" target="_blank" rel="noreferrer noopener" aria-label="Page LinkedIn">
+                      <img src="img/footer-linkedin-50.png" alt="Page LinkedIn" />
+                    </a>
+                  `,
               },
               {
-                label: "We❤Devs.com",
-                href: "https://welovedevs.com/app/fr/developer/olivier-developpeur-reactif",
+                html: `
+                    <a href="https://welovedevs.com/app/fr/developer/olivier-developpeur-reactif" target="_blank" rel="noreferrer noopener" aria-label="Page WeLoveDevs.com">
+                      <img src="img/footer-aimer-50.png" alt="Page WeLoveDevs.com" />
+                    </a>
+                  `,
               },
             ],
           },
@@ -90,14 +99,10 @@ const config = {
                 label: "Blog",
                 to: "/blog",
               },
-              {
-                label: "GitHub",
-                href: "https://github.com/OlivierZiolkowski",
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Olivier Ziolkowski. Built with Docusaurus 🦖.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Olivier Ziolkowski. Built with Docusaurus. Illustrations : icons8 & themeisle.com`,
       },
       prism: {
         theme: lightCodeTheme,

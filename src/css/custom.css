@@ -48,3 +48,11 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 h2 {
   text-align: center;
 }
+
+.footer__items {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer__item {
+  margin-right: var(--ifm-pre-padding);
+}
