@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./index.module.css";
 import gitIcon from "../../../static/img/icons8-github-24.png";
 import appIcon from "../../../static/img/icons8-web-24.png";
@@ -8,7 +8,7 @@ import WITWDesktop from "../../../static/img/projects/WITW-desktop.png";
 const projectsList = [
   {
     name: "Back to the blog !",
-    desc: "Projet réalisé pour concrétiser l'apprentissage du framework Next.js ainsi que l'usage de Firebase pour l'authentification, la base de données NoSQL et le stockage de médias",
+    desc: "Faux-blox développé pour concrétiser l'apprentissage du framework Next.js ainsi que l'usage de Firebase pour l'authentification, la base de données NoSQL et le stockage de médias. Ce projet m'a permis de découvrir comment utiliser Next.js et son sytème de Server-Side Rendering. Retrouvez plus d'infos sur le dépôt GitHub.",
     technos: ["React.js", "Next.js", "Firebase", "SASS"],
     links: {
       app: "https://back-to-the-blog.vercel.app/",
@@ -18,7 +18,7 @@ const projectsList = [
   },
   {
     name: "Where in the world ?",
-    desc: "Challenge proposé par frontend-mentor dont le but était de créer une app comprenant des infos provenant de l'API restcountries.com.",
+    desc: "Challenge proposé par frontend-mentor dont le but était de créer une app comprenant des infos provenant de l'API restcountries.com. Ce challenge a pour but d'afficher 2 pages : l'ensmble des pays remontés par l'API puis une page avec l'information du pays sélectionné par l'utilisateur. Plus d'infos sur le dépôt GitHub.",
     technos: ["React.js", "JS async/await", "API", "Styled-components"],
     links: {
       app: "https://oz-rest-countries-api.surge.sh/",
