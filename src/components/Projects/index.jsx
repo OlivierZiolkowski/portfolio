@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./index.module.css";
 import gitIcon from "../../../static/img/icons8-github-24.png";
 import appIcon from "../../../static/img/icons8-web-24.png";
-import BTTBDesktop from "../../../static/img/projects/BTTB-desktop.png";
-import WITWDesktop from "../../../static/img/projects/WITW-desktop.png";
+import BTTBDesktop from "../../../static/img/projects/BTTB-desktop.jpg";
+import WITWDesktop from "../../../static/img/projects/WITW-desktop.jpg";
 
 const projectsList = [
   {

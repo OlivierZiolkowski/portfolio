@@ -47,7 +47,7 @@ const config = {
         title: "Olivier Ziolkowski",
         logo: {
           alt: "Logo du site",
-          src: "img/logo.svg",
+          src: "img/avatar.png",
         },
         items: [
           { to: "/blog", label: "Blog", position: "left" },
