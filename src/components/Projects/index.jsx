@@ -4,8 +4,20 @@ import gitIcon from "../../../static/img/icons8-github-24.png";
 import appIcon from "../../../static/img/icons8-web-24.png";
 import BTTBDesktop from "../../../static/img/projects/BTTB-desktop.jpg";
 import WITWDesktop from "../../../static/img/projects/WITW-desktop.jpg";
+import VEEDesktop from "../../../static/img/projects/VEE.jpg";
+import Portfolio from "../../../static/img/projects/portfolio.jpg";
 
 const projectsList = [
+  {
+    name: "Vivre en équilibre",
+    desc: "Projet développé pour le compte d'une naturopathe qui souhaitait avoir un site Internet regroupant une présentation de son métier, la prise de rendez-vous et un blog. Ce site a été réalisé durant un stage de 2 mois en autonomie complète de A à Z.",
+    technos: ["WordPress", "PHP", "SASS"],
+    links: {
+      app: "",
+      git: "",
+    },
+    picture: VEEDesktop,
+  },
   {
     name: "Back to the blog !",
     desc: "Faux-blox développé pour concrétiser l'apprentissage du framework Next.js ainsi que l'usage de Firebase pour l'authentification, la base de données NoSQL et le stockage de médias. Ce projet m'a permis de découvrir comment utiliser Next.js et son sytème de Server-Side Rendering. Retrouvez plus d'infos sur le dépôt GitHub.",
@@ -15,6 +27,16 @@ const projectsList = [
       git: "https://github.com/OlivierZiolkowski/back-to-the-blog",
     },
     picture: BTTBDesktop,
+  },
+  {
+    name: "Portfolio",
+    desc: "FPortfolio personnel permettant de me présenter, de faire découvrir mon parcours et mes projets récents. J'ai utilisé Docusaurus pour me permettre d'utiliser le blog intégré avec des fichiers Markdown tout en créant des pages basé sur React.js.",
+    technos: ["React.js", "Docusaurus", "Markdown"],
+    links: {
+      app: "https://olivierziol.fr/",
+      git: "https://github.com/OlivierZiolkowski/portfolio",
+    },
+    picture: Portfolio,
   },
   {
     name: "Where in the world ?",
