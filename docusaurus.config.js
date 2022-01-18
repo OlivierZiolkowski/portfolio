@@ -5,7 +5,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+module.exports = {
   title: "Olivier Ziolkowski - Développeur front-end",
   tagline: "Développeur front-end",
   url: "https://olivierziol.fr",
@@ -108,7 +108,15 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      i18n: {
+        defaultLocale: "fr",
+        locales: ["fr"],
+      },
+      metadata: [
+        {
+          property: "og:image",
+          content: "img/metaImage.jpg",
+        },
+      ],
     }),
 };
-
-module.exports = config;
