@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Olivier Ziolkowski - Développeur front-end React.js",
-  tagline: "Développeur font-end",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Olivier Ziolkowski - Développeur front-end",
+  tagline: "Développeur front-end",
+  url: "https://olivierziol.fr",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -46,7 +46,7 @@ const config = {
       navbar: {
         title: "Olivier Ziolkowski",
         logo: {
-          alt: "My Site Logo",
+          alt: "Logo du site",
           src: "img/logo.svg",
         },
         items: [
