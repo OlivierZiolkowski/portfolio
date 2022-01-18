@@ -115,7 +115,8 @@ module.exports = {
       metadata: [
         {
           property: "og:image",
-          content: "img/metaImage.jpg",
+          content:
+            "https://repository-images.githubusercontent.com/446488101/fb8474cb-d54f-401f-bcc6-e1bad232b351",
         },
       ],
     }),
