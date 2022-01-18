@@ -2,6 +2,7 @@ import React from "react";
 import illustration from "../../../static/img/home-illustration.png";
 import styles from "./index.module.css";
 import clsx from "clsx";
+import Link from "@docusaurus/Link";
 
 const informations = {
   surtitle: "Bonjour, je m'apelle",
@@ -9,9 +10,8 @@ const informations = {
   subtitle: "et je suis développeur web !",
   firstPar:
     "Développeur web front-end depuis 2020 avec un passé dans différents métiers du numérique. Intéressé par l'expérience utilisateur, j'aime apprendre et transmettre mes acquis !",
-  scndPar:
-    "Vous voulez en savoir plus ? Ça se passe juste en dessous 👇 mais aussi sur mon blog 🖨 !",
-  cta: "Passez me dire bonjour ! 👋",
+  scndPar: `Vous voulez en savoir plus ? Ça se passe juste en dessous 👇 mais aussi sur mon blog !`,
+  cta: "Passez me dire bonjour ! 📧",
 };
 
 export default function Header() {
@@ -26,12 +26,12 @@ export default function Header() {
         <p className={styles.subtitle}>{informations.subtitle}</p>
         <p>{informations.firstPar}</p>
         <p>{informations.scndPar}</p>
-        <a
+        <Link
           className="button button--primary"
-          href="mailto:olivier.ziolkowski@gmail.com"
+          to="mailto:olivier.ziolkowski@gmail.com"
         >
           {informations.cta}
-        </a>
+        </Link>
       </div>
     </header>
   );

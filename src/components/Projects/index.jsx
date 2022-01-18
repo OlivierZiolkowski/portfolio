@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import Link from "@docusaurus/Link";
 import gitIcon from "../../../static/img/icons8-github-24.png";
 import appIcon from "../../../static/img/icons8-web-24.png";
 import BTTBDesktop from "../../../static/img/projects/BTTB-desktop.jpg";
@@ -73,16 +74,16 @@ export default function Projects() {
             <ul className={styles.projectLinks}>
               {project.links.app && (
                 <li>
-                  <a href={project.links.app} className={styles.projectLink}>
+                  <Link to={project.links.app} className={styles.projectLink}>
                     <img src={appIcon} alt="Voir l'application" />
-                  </a>
+                  </Link>
                 </li>
               )}
               {project.links.git && (
                 <li>
-                  <a href={project.links.git} className={styles.projectLink}>
+                  <Link to={project.links.git} className={styles.projectLink}>
                     <img src={gitIcon} alt="Aller sur le dépôt GitHub" />
-                  </a>
+                  </Link>
                 </li>
               )}
             </ul>
